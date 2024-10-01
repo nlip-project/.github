@@ -1,1 +1,1 @@
-# .github
+# NLIP - Natural Language Interaction Protocol
