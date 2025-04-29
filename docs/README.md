@@ -26,16 +26,10 @@ The Natural Language Interaction Protocol (NLIP) is envisioned as the common wir
 
 ## Protocol at a glance
 
-* **Envelope** – A JSON object whose first sub-message carries  
-  `format`, `subformat`, `content`; optional sub-messages attach images,
-  policy tokens (`conversation`, `authentication`), or control directives.
-* **Transport-agnostic** – Initial binding is HTTPS/REST; QUIC,
-  WebRTC, gRPC and others can be added without changing the envelope.
-* **Multi-modal** – `text/english`, `binary/image/jpeg`,
-  `structured/uri`, `location/gps`, `generic/<ext>` … all legal in the
-  same exchange.
-* **Hot-extensible** – New formats or sub-protocols negotiate at
-  runtime; old agents keep working.
+* **Envelope** – A JSON object whose first sub-message carries `format`, `subformat`, `content`; optional sub-messages attach images, policy tokens (`conversation`, `authentication`), or control directives.
+* **Transport-agnostic** – Initial binding is HTTPS/REST; QUIC, WebRTC, gRPC and others can be added without changing the envelope.
+* **Multi-modal** – `text/english`, `binary/image/jpeg`, `structured/uri`, `location/gps`, `generic/<ext>` … all legal in the same exchange.
+* **Hot-extensible** – New formats or sub-protocols negotiate at runtime; old agents keep working.
 
 ### Exclusions
 - NLIP does not aim to provide interoperability with existing proprietary systems directly.
@@ -57,7 +51,6 @@ Think: less app fatigue, more seamless automation.
 We welcome contributions to the spec and implementations! You can:
 
 - File issues and pull requests
-- Join the Matrix chat: `#nlip:matrix.org`
 - Propose new extensions (see `/proposals/`)
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
@@ -65,14 +58,14 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_C
 ## License
 
 - **Specs** are licensed under Ecma International’s copyright terms
-- **Code** is Apache 2.0 OR MIT
+- **Code** is Apache 2.0
 
 See [`LICENSE`](LICENSE) for full terms.
 
 ## Resources
 
-- Website: https://nlip-project.org
-- Chat: `#nlip:matrix.org`
-- Discussions: https://github.com/NLIP-PROJECT/nlip/discussions
+- Website: [https://nlip-project.org](https://nlip-project.github.io/.github/#/)
+- Chat: `#nlip`
+- Discussions: `#nlip`
 
 > Maintained by Ecma TC-56 and the NLIP community.
