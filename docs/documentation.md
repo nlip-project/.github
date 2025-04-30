@@ -1,6 +1,6 @@
 # NLIP Reference Architecture
 
-## 1 Two Complementary Halves  
+## Two Complementary Halves  
 
 | Left-hand side – *consumer channel* | Right-hand side – *B2B / service mesh* |
 |------------------------------------|-----------------------------------------|
@@ -9,7 +9,7 @@
 
 ![NLIP Architecture Diagram](images/conceptual-architecture-nlip.png)
 
-## 2 Key Architectural Elements & Flows
+## Key Architectural Elements & Flows
 
 | Element | Role in the architecture |
 |---------|--------------------------|
@@ -19,14 +19,14 @@
 | **Chat Server / Server App** | Hosts one or more LLMs plus business logic & data stores.<br>Interprets NLIP messages, enforces auth/authz, applies policy, stores context, generates responses. |
 | **Edge / Personal LLM (optional)** | User-controlled agent running locally: filters, summarises, masks or augments NLIP traffic before/after it reaches the network. |
 
-## 3 Supported Deployment Patterns
+## Supported Deployment Patterns
 
 1. **Classic client–server** – mobile app ↔ business chat-server.  
 2. **Proxy / Gateway** – NLIP shim converts legacy REST/proprietary APIs into NLIP.  
 3. **Federated / Chained services** – server acts as NLIP client to other NLIP or proxied services; orchestrates multiple LLMs.  
 4. **Edge-mediated privacy** – user-side LLM vets or rewrites messages before forwarding, giving users full data control.  
 
-## 4 Why This Matters
+## Why This Matters
 
 * **One app vs. many** – users install *one* NLIP-capable client instead of dozens of siloed apps.  
 * **Hot extensibility** – businesses add new capabilities server-side; no client redeploy.  
@@ -120,70 +120,35 @@ NLIP must support high-performance, low-latency interactions through:
 - **Denial of Service Prevention**: Design must include safeguards against common DoS vectors (e.g., SYN floods, half-open sessions).
 - **Real-time Streaming**: Sessions may be split into multiple prioritized streams with delay and ordering constraints.
 
-
-## Use Cases
-
-- Universal travel assistant interacting with transit systems across cities.
-- Financial transactions across different banking agents.
-- Retail shopping and customer service via a common chat interface.
-- Conference support agents that guide users through event logistics.
-
-## Stakeholders
-
-- ECMA Technical Committee 56
-- AI platform providers
-- App developers and platform integrators
-- Enterprises seeking to streamline customer interactions
-
-## Benefits
-
-- Simplified user experience through a unified interaction layer.
-- Reduced development and maintenance burden for service providers.
-- Enhanced security and privacy controls within conversational interfaces.
-- Greater adaptability and innovation through flexible, extensible architecture.
-
-## Key Concepts
-
-- **Agents** – Software systems that use NLIP to communicate
-- **Messages** – JSON objects with rich content (text, audio, location, etc.)
-- **Control exchanges** – Used to negotiate authentication, policies, session management
-- **Binding** – NLIP messages can be sent over different protocols (e.g., HTTPS, gRPC)
-
-## Goals
-
-- Support **multi-modal data** (text, audio, structured data)
-- Define clear **security and identity negotiation** mechanisms
-- Be **extensible** without breaking older clients
-
-## Use Cases
+# Use Cases
 
 - Universal travel assistant interacting with transit systems across cities.
 - Financial transactions across different banking agents.
 - Retail shopping and customer service via a common chat interface.
 - Conference support agents that guide users through event logistics.
 
-## Stakeholders
+# Stakeholders
 
 - ECMA Technical Committee 56
 - AI platform providers
 - App developers and platform integrators
 - Enterprises seeking to streamline customer interactions
 
-## Benefits
+# Benefits
 
 - Simplified user experience through a unified interaction layer.
 - Reduced development and maintenance burden for service providers.
 - Enhanced security and privacy controls within conversational interfaces.
 - Greater adaptability and innovation through flexible, extensible architecture.
 
-## Key Concepts
+# Key Concepts
 
 - **Agents** – Software systems that use NLIP to communicate
 - **Messages** – JSON objects with rich content (text, audio, location, etc.)
 - **Control exchanges** – Used to negotiate authentication, policies, session management
 - **Binding** – NLIP messages can be sent over different protocols (e.g., HTTPS, gRPC)
 
-## Goals
+# Goals
 
 - Support **multi-modal data** (text, audio, structured data)
 - Define clear **security and identity negotiation** mechanisms
