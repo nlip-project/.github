@@ -24,39 +24,7 @@ This document explores how NLIP enables seamless interoperability between differ
 ### 1.2 The Original NLIP Proposal
 NLIP was originally proposed in the [AAAI Workshop specification](https://github.com/nlip-project/documents/blob/main/NLIP_Specification.pdf), which formalized its message schema, resource model, and deployment strategies. The specification presents NLIP's use in fundamental deployment topologies:
 
-```mermaid
-graph TD
-    classDef client fill:#f9f,stroke:#333,stroke-width:2px
-    classDef server fill:#bbf,stroke:#333,stroke-width:2px
-    classDef proxy fill:#bfb,stroke:#333,stroke-width:2px
-    classDef federator fill:#fbb,stroke:#333,stroke-width:2px
-
-    subgraph "Federator Configuration"
-        C3[Client Agent] -->|NLIP Request| F[Federator Agent]
-        F -->|NLIP Request| S3[Server Agent 1]
-        F -->|NLIP Request| S4[Server Agent 2]
-        S3 -->|NLIP Response| F
-        S4 -->|NLIP Response| F
-        F -->|NLIP Response| C3
-    end
-
-    subgraph "Proxy Configuration"
-        C2[Client Agent] -->|NLIP Request| P[Proxy Agent]
-        P -->|NLIP Request| S2[Server Agent]
-        S2 -->|NLIP Response| P
-        P -->|NLIP Response| C2
-    end
-
-    subgraph "Basic Client-Server"
-        C1[Client Agent] -->|NLIP Request| S1[Server Agent]
-        S1 -->|NLIP Response| C1
-    end
-
-    class C1,C2,C3 client
-    class S1,S2,S3,S4 server
-    class P proxy
-    class F federator
-```
+![Topology Diagram](https://www.mermaidchart.com/raw/bfb845aa-cdba-49cb-8401-3eb3f5150d21?theme=light&version=v0.1&format=svg)
 
 The specification defines NLIP as a transport-agnostic, model-agnostic, structured interface between communicating agents. It serves as the canonical reference for understanding NLIP's role in the AI protocol stack.
 
