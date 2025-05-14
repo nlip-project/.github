@@ -24,7 +24,7 @@ This document explores how NLIP enables seamless interoperability between differ
 ### 1.2 The Original NLIP Proposal
 NLIP was originally proposed in the [AAAI Workshop specification](https://github.com/nlip-project/documents/blob/main/NLIP_Specification.pdf), which formalized its message schema, resource model, and deployment strategies. The specification presents NLIP's use in fundamental deployment topologies:
 
-![Topology Diagram](https://www.mermaidchart.com/raw/bfb845aa-cdba-49cb-8401-3eb3f5150d21?theme=light&version=v0.1&format=svg)
+![Topology Diagram](images/Fundamental_Deployment_Diagram.png)
 
 The specification defines NLIP as a transport-agnostic, model-agnostic, structured interface between communicating agents. It serves as the canonical reference for understanding NLIP's role in the AI protocol stack.
 
@@ -43,27 +43,7 @@ The design principles introduced in the Executive Summary - transport-agnostic, 
 ## 2. Protocol Architecture
 
 ### 2.1 Protocol Stack
-```mermaid
-graph TD
-    classDef user fill:#f9f,stroke:#333,stroke-width:2px
-    classDef nlip fill:#bbf,stroke:#333,stroke-width:2px
-    classDef resources fill:#bfb,stroke:#333,stroke-width:2px
-    classDef protocol fill:#fbb,stroke:#333,stroke-width:2px
-
-    U[USER / AGENT] -->|Natural Language| N[NLIP<br/>User-facing REST-like protocol]
-    N --> R[RESOURCES<br/>Agents, tools, data, APIs, models]
-    
-    subgraph R[RESOURCES]
-        A2A[A2A<br/>tasking]
-        MCP[MCP<br/>bindings]
-        FC[Function<br/>Calling]
-    end
-
-    class U user
-    class N nlip
-    class R resources
-    class A2A,MCP,FC protocol
-```
+![Protocol Stack Diagram](images/Protocol_Stack_Diagram.png)
 
 This diagram illustrates NLIP's position in the protocol stack, showing how it provides a unified interface above specialized protocols while maintaining direct access to resources.
 
@@ -152,25 +132,7 @@ NLIP enables seamless translation between natural language and various AI protoc
 
 ### 3.2 Multi-Protocol Support
 
-```mermaid
-graph TD
-    classDef user fill:#f9f,stroke:#333,stroke-width:2px
-    classDef nlip fill:#bbf,stroke:#333,stroke-width:2px
-    classDef protocol fill:#fbb,stroke:#333,stroke-width:2px
-
-    U[USER] -->|Natural Language| N[NLIP Message<br/>format=text]
-    N -->|Decompose| P[External Orchestrator]
-    P -->|A2A Task| A[A2A Agent]
-    P -->|MCP Query| M[MCP Tool]
-    P -->|Function Call| F[Function]
-    A -->|Result| R[NLIP Response]
-    M -->|Result| R
-    F -->|Result| R
-
-    class U user
-    class N,P,R nlip
-    class A,M,F protocol
-```
+![Multi-Protocol Diagram](images/Multi_Protocol_Diagram.png)
 
 This diagram shows how NLIP messages carry the necessary control and format information to enable external orchestrators to route requests appropriately. NLIP itself does not perform orchestration but provides the structural support for it.
 
@@ -202,71 +164,13 @@ Key Features of Multi-Protocol Support:
 
 The following diagrams show LangChain's message flow both with and without NLIP, highlighting the benefits of NLIP integration:
 
-```mermaid
-graph TD
-    subgraph "LangChain With NLIP"
-        U2[USER sends NLIP msg<br/>format=text, subformat=en] --> P[PromptChain<br/>Applies templating<br/>to NLIP content]
-        P --> R2[NLIP ToolRouter<br/>Uses control, format<br/>to dispatch]
-        R2 -->|format=structured| T3[Tool A: WebSearch<br/>Returns structured data]
-        R2 -->|format=binary| T4[Tool B: PDFGen<br/>Returns binary data]
-        T3 --> M2[MemoryChain<br/>Uses token, submessages<br/>for state tracking]
-        T4 --> M2
-        M2 --> O[NLIP Output Composer<br/>Collects submessages<br/>into response]
-    end
-
-    subgraph "LangChain Without NLIP"
-        U1[USER INPUT<br/>Raw string prompt<br/>No structure] --> L1[LLM Chain<br/>Uses prompt templates<br/>Outputs string]
-        L1 --> R1[Tool Router<br/>Selects tool/function<br/>from list]
-        R1 -->|string| T1[Tool A<br/>Returns string<br/>or custom JSON]
-        R1 -->|string| T2[Tool B<br/>Returns string<br/>or custom JSON]
-        T1 --> M1[Memory or Output<br/>Optional state<br/>tracking]
-        T2 --> M1
-    end
-
-    classDef user fill:#f9f,stroke:#333,stroke-width:2px
-    classDef chain fill:#bfb,stroke:#333,stroke-width:2px
-    classDef router fill:#fbb,stroke:#333,stroke-width:2px
-    classDef tool fill:#ffb,stroke:#333,stroke-width:2px
-    classDef memory fill:#bff,stroke:#333,stroke-width:2px
-    classDef nlip fill:#bbf,stroke:#333,stroke-width:2px
-
-    class U1,U2 user
-    class L1,P chain
-    class R1,R2 router
-    class T1,T2,T3,T4 tool
-    class M1,M2 memory
-    class O nlip
-```
+![LangChain Diagram](images/langchain_example.png)
 
 This comparison highlights how NLIP's structured message format enables more robust tool integration, state management, and error handling compared to traditional string-based approaches.
 
 #### 3.3.2 Cross-Framework Integration
 
-```mermaid
-graph TD
-    classDef user fill:#f9f,stroke:#333,stroke-width:2px
-    classDef nlip fill:#bbf,stroke:#333,stroke-width:2px
-    classDef langgraph fill:#fbb,stroke:#333,stroke-width:2px
-    classDef autogen fill:#bfb,stroke:#333,stroke-width:2px
-    classDef langchain fill:#ffb,stroke:#333,stroke-width:2px
-    classDef adk fill:#bff,stroke:#333,stroke-width:2px
-
-    U[USER] -->|Natural Language| N[NLIP Message<br/>format=text]
-    N --> P[LangGraph Planner Node<br/>Parses & routes task]
-    P -->|Retrieve flights| A[AutoGen Agent]
-    P -->|Find restaurants| L[LangChain Tool Node]
-    A --> B[ADK Agent: Booker<br/>Tool via MCP]
-    L --> S[LangGraph Node: Summary<br/>Creates itinerary]
-    B --> R[NLIP Response Node<br/>Assembles results]
-    S --> R
-
-    class U user
-    class N,R nlip
-    class P,S langgraph
-    class A autogen
-    class L langchain
-    class B adk
-```
+![Cross-Framework Diagram](images/cross_framework_integration.png)
 
 This diagram shows how NLIP enables different frameworks to work together seamlessly, with each framework handling specific aspects of the task while maintaining a consistent message flow.
 
