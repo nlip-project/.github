@@ -11,6 +11,12 @@
   <!-- index.html -->
 </head>
 <body>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the NLIP Project</h1>
+      <p>Open, vendor-neutral protocol for intelligent agent communications.</p>
+    </div>
+  </section>
   <div id="app"></div>
   <script>
     window.$docsify = {
@@ -94,6 +100,27 @@
       padding-top: 6px;
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
     }
+    .hero {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-image: url('images/NLIPlogo.svg'); /* Change path as needed */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content {
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 2rem 3rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
   </style>
 </body>
 </html>
