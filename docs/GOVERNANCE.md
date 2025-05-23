@@ -61,7 +61,7 @@ A new work item (e.g. NLIP) is formally initiated when:
 ## External Contributions
 
 We welcome contributions via GitHub in accordance with:
-- [Contributing Guidelines](./CONTRIBUTING.md)
+- [Contributing Guidelines](CONTRIBUTING?id=contributing-to-nlip)
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 
 ECMA has structured processes for incorporating **open-source feedback**, and TC56 commits to:

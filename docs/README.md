@@ -2,7 +2,7 @@
 
 **NLIP** is an *open*, vendor-neutral application-layer protocol that lets independent **intelligent agents** running on phones, servers, IoT gateways, browsers, or HPC clusters exchange information in a well-typed, secure, multi-modal envelope. 
 
-<code> Notice: Ecma TC 56 has published first draft standard specification for NLIP. We invite all colleagues to comment on the specifications by opening an issue in the [First Draft Repository](https://github.com/nlip-project/ecma_draft1) </code>
+<code>Notice: Ecma TC 56 has published first draft standard specification for NLIP. We invite all colleagues to comment on the specifications by opening an issue in the [First Draft Repository](https://github.com/nlip-project/ecma_draft1) </code>
 
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue)](./LICENSE)
 
@@ -55,7 +55,7 @@ We welcome contributions to the spec and implementations! You can:
 - File issues and pull requests
 - Propose new extensions (see `/proposals/`)
 
-Please see [Contributing Guidelines](./CONTRIBUTING.md) and [Code of Conduct](./CODE_OF_CONDUCT.md).
+Please see [Contributing Guidelines](CONTRIBUTING?id=contributing-to-nlip) and [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## Governance
 
