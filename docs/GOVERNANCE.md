@@ -23,7 +23,7 @@ We adhere to the following core principles:
 
 ## ECMA Governance Structure
 
-![Ecma TC56 governance](./docs/images/ecma_tc56_governance.svg)
+![Ecma TC56 governance](images/EcmaTC56Governance.svg)
 
 ### Technical Committee 56 (TC56)
 NLIP is developed under **TC56**, a formal ECMA technical committee.
@@ -61,8 +61,8 @@ A new work item (e.g. NLIP) is formally initiated when:
 ## External Contributions
 
 We welcome contributions via GitHub in accordance with:
-- [CONTRIBUTING.md](./docs/CONTRIBUTING.md)
-- [CODE_OF_CONDUCT.md](./docs/CODE_OF_CONDUCT.md)
+- [Contributing Guidelines](./CONTRIBUTING.md)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
 
 ECMA has structured processes for incorporating **open-source feedback**, and TC56 commits to:
 - Actively reviewing and acknowledging public GitHub issues.

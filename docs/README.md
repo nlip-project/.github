@@ -55,18 +55,26 @@ We welcome contributions to the spec and implementations! You can:
 - File issues and pull requests
 - Propose new extensions (see `/proposals/`)
 
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+Please see [Contributing Guidelines](./CONTRIBUTING.md) and [Code of Conduct](./CODE_OF_CONDUCT.md).
+
+## Governance
+
+Please see [Governance](./GOVERNANCE.md)
+
+## Support
+
+Please see [Support](./SUPPORT.md)
 
 ## License
 
 - **Specs** are licensed under Ecma International’s copyright terms
 - **Code** is Apache 2.0
 
-See [`LICENSE`](LICENSE) for full terms.
+See [`License`](./LICENSE) for full terms.
 
 ## Resources
 
-- Website: [https://nlip-project.org](https://nlip-project.github.io/.github/#/)
+- Website: [https://nlip-project.org](https://nlip-project.org/#/)
 - Chat: `#nlip`
 - Discussions: `#nlip`
 
