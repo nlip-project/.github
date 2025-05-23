@@ -1,4 +1,4 @@
-# GOVERNANCE.md
+# GOVERNANCE
 
 ## Overview
 
@@ -62,7 +62,7 @@ A new work item (e.g. NLIP) is formally initiated when:
 
 We welcome contributions via GitHub in accordance with:
 - [Contributing Guidelines](CONTRIBUTING?id=contributing-to-nlip)
-- [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Code of Conduct](CODE_OF_CONDUCT?id=code-of-conduct)
 
 ECMA has structured processes for incorporating **open-source feedback**, and TC56 commits to:
 - Actively reviewing and acknowledging public GitHub issues.

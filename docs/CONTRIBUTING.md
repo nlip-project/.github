@@ -21,8 +21,8 @@ There are many ways to contribute:
 
 Please review these documents:
 
-- [Code of Conduct](./CODE_OF_CONDUCT.md) – expected behavior in all community spaces  
-- [Security Policy](./SECURITY.md) – how to report vulnerabilities safely  
+- [Code of Conduct](CODE_OF_CONDUCT?id=code-of-conduct) – expected behavior in all community spaces  
+- [Security Policy](SECURITY?id=security-policy) – how to report vulnerabilities safely  
 
 ## How to Contribute
 
@@ -76,6 +76,6 @@ We roughly follow these stages:
 
 ## Community
 
-We are building a professional, welcoming, and open environment for collaboration. All contributions are expected to uphold our [Code of Conduct](./CODE_OF_CONDUCT.md).
+We are building a professional, welcoming, and open environment for collaboration. All contributions are expected to uphold our [Code of Conduct](CODE_OF_CONDUCT?id=code-of-conduct).
 
 Thank you for being part of the **NLIP** project! Together, we are building the future of natural language interaction.  

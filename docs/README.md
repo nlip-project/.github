@@ -4,7 +4,7 @@
 
 <code>Notice: Ecma TC 56 has published first draft standard specification for NLIP. We invite all colleagues to comment on the specifications by opening an issue in the [First Draft Repository](https://github.com/nlip-project/ecma_draft1) </code>
 
-[![License](https://img.shields.io/badge/License-Apache--2.0-blue)](./LICENSE)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue)](LICENSE)
 
 ## Overview
 
@@ -55,22 +55,26 @@ We welcome contributions to the spec and implementations! You can:
 - File issues and pull requests
 - Propose new extensions (see `/proposals/`)
 
-Please see [Contributing Guidelines](CONTRIBUTING?id=contributing-to-nlip) and [Code of Conduct](./CODE_OF_CONDUCT.md).
+Please see [Contributing Guidelines](CONTRIBUTING?id=contributing-to-nlip) and [Code of Conduct](CODE_OF_CONDUCT?id=code-of-conduct).
 
 ## Governance
 
-Please see [Governance](./GOVERNANCE.md)
+Please see [Governance](GOVERNANCE?id=governance)
 
 ## Support
 
-Please see [Support](./SUPPORT.md)
+Please see [Support](SUPPORT?id=support)
+
+## Security
+
+Please see [Security Policy](SECURITY?id=security-policy)
 
 ## License
 
 - **Specs** are licensed under Ecma International’s copyright terms
 - **Code** is Apache 2.0
 
-See [`License`](./LICENSE) for full terms.
+See [`License`](LICENSE) for full terms.
 
 ## Resources
 
