@@ -109,10 +109,23 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.08);
       padding: 24px 32px;
       max-width: 550px;
-      margin: 32px 0 32px 32px;  /* Top and left margin for spacing */
       min-height: 140px;
+      /* Key changes below */
+      margin-top: 32px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 2;
     }
 
+    @media (min-width: 1000px) {
+      .hero {
+        /* Optional: match the content's left edge if Docsify uses a fixed content width */
+        margin-left: calc(240px + 32px);  /* 240px sidebar + 32px gutter (adjust as needed) */
+        margin-right: auto;
+      }
+    }
+    
     .hero-img {
       width: 80px; /* Adjust as needed */
       height: 80px;
