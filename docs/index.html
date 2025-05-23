@@ -19,40 +19,6 @@
     </div>
   </section>
   <div id="app"></div>
-  <script>
-    window.$docsify = {
-      loadSidebar:  true,
-      loadNavbar:   true,
-      logo:         '/images/logo.png',
-      nameLink:     '/docs/slug',
-      subMaxLevel:  2,
-      // disable Mermaid's auto-start, we'll kick it off ourselves
-      mermaidConfig: { startOnLoad: false },
-
-      // Docsify plugin to rerun Mermaid after each page load
-      plugins: [
-        function(hook, vm) {
-          hook.doneEach(function() {
-            // find all .mermaid blocks and render them
-            if (window.mermaid) {
-              mermaid.init(undefined, document.querySelectorAll('.mermaid'));
-            }
-          });
-        }
-      ]
-    };
-  </script>
-
-  <!-- 1) Load UMD Mermaid synchronously -->
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
-  <script>
-    // expose to the window so Docsify can see it
-    window.mermaid = mermaid;
-    // apply any mermaidConfig you like here if you want to override
-    mermaid.initialize(window.$docsify.mermaidConfig);
-  </script>
-
-  <!-- 2) Finally load Docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
@@ -104,28 +70,18 @@
     .hero {
       display: flex;
       align-items: center;
+      justify-content: center; /* Center items horizontally inside the hero */
       background: #fff;
       border-radius: 16px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.08);
       padding: 24px 32px;
       max-width: 550px;
       min-height: 140px;
-      /* Key changes below */
-      margin-top: 32px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 32px auto; /* <--- This centers the hero horizontally */
       position: relative;
       z-index: 2;
     }
 
-    @media (min-width: 1000px) {
-      .hero {
-        /* Optional: match the content's left edge if Docsify uses a fixed content width */
-        margin-left: calc(240px + 32px);  /* 240px sidebar + 32px gutter (adjust as needed) */
-        margin-right: auto;
-      }
-    }
-    
     .hero-img {
       width: 80px; /* Adjust as needed */
       height: 80px;
