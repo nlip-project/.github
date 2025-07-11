@@ -24,7 +24,8 @@ This document explores how NLIP enables seamless interoperability between differ
 ### 1.2 The Original NLIP Proposal
 NLIP was originally proposed in the [AAAI Workshop specification](https://github.com/nlip-project/documents/blob/main/NLIP_Specification.pdf), which formalized its message schema, resource model, and deployment strategies. The specification presents NLIP's use in fundamental deployment topologies:
 
-![Topology Diagram](images/Fundamental_Deployment_Diagram.png)
+![Three NLIP deployment configurations: (1) Basic Client-Server: Client Agent sends NLIP requests directly to Server Agent and receives responses. (2) Proxy Configuration: Client Agent and Server Agent communicate indirectly through a central Proxy Agent, which forwards requests and responses. (3) Federation Configuration: A Federator Agent manages communication among multiple Client and Server Agents, orchestrating NLIP requests and responses across multiple nodes.](images/Fundamental_Deployment_Diagram.png "NLIP Fundamental Deployment Configurations")
+
 
 The specification defines NLIP as a transport-agnostic, model-agnostic, structured interface between communicating agents. It serves as the canonical reference for understanding NLIP's role in the AI protocol stack.
 
@@ -43,7 +44,8 @@ The design principles introduced in the Executive Summary - transport-agnostic, 
 ## 2. Protocol Architecture
 
 ### 2.1 Protocol Stack
-![Protocol Stack Diagram](images/Protocol_Stack_Diagram.png)
+![Flowchart showing NLIP architecture: A user or agent sends natural language input to NLIP, a user-facing REST-like protocol, which then interacts with resources including A2A tasking, MCP bindings, and Function Calling.](images/Protocol_Stack_Diagram.png "NLIP Protocol Stack Diagram")
+
 
 This diagram illustrates NLIP's position in the protocol stack, showing how it provides a unified interface above specialized protocols while maintaining direct access to resources.
 
@@ -131,8 +133,8 @@ NLIP enables seamless translation between natural language and various AI protoc
    ```
 
 ### 3.2 Multi-Protocol Support
+![Flowchart illustrating NLIP's multi-protocol support: The user provides natural language input formatted into an NLIP message. An external orchestrator decomposes the request into tasks sent to an A2A Agent, MCP Tool, or Function, each returning results. These results are combined into an NLIP response.](images/Multi_Protocol_Diagram.png "NLIP Multi-Protocol Support")
 
-![Multi-Protocol Diagram](images/Multi_Protocol_Diagram.png)
 
 This diagram shows how NLIP messages carry the necessary control and format information to enable external orchestrators to route requests appropriately. NLIP itself does not perform orchestration but provides the structural support for it.
 
@@ -164,13 +166,14 @@ Key Features of Multi-Protocol Support:
 
 The following diagrams show LangChain's message flow both with and without NLIP, highlighting the benefits of NLIP integration:
 
-![LangChain Diagram](images/langchain_example.png)
+![Two side-by-side diagrams comparing LangChain without NLIP and LangChain with NLIP. The left diagram (without NLIP) shows a raw user prompt going through an LLM chain and a tool router to invoke Tool A or B, returning a string or JSON with optional memory tracking. The right diagram (with NLIP) shows a structured NLIP message processed via a PromptChain and NLIP ToolRouter, dispatching tasks by format to tools like WebSearch or PDFGen. Responses flow through a MemoryChain for state tracking and are composed by the NLIP Output Composer.](images/langchain_example.png "LangChain Integration With and Without NLIP")
 
 This comparison highlights how NLIP's structured message format enables more robust tool integration, state management, and error handling compared to traditional string-based approaches.
 
 #### 3.3.2 Cross-Framework Integration
 
-![Cross-Framework Diagram](images/cross_framework_integration.png)
+![Diagram illustrating NLIP cross-framework integration. A user sends natural language input, which is converted into an NLIP message. A LangGraph Planner Node parses and routes the task: one branch sends it to an AutoGen Agent and then to an ADK Agent via MCP to retrieve flights; the other sends it to a LangChain Tool Node and a LangGraph Node to summarize and create an itinerary. The results are assembled by the NLIP Response Node.](images/cross_framework_integration.png "NLIP Cross-Framework Integration Flow")
+
 
 This diagram shows how NLIP enables different frameworks to work together seamlessly, with each framework handling specific aspects of the task while maintaining a consistent message flow.
 
