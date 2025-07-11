@@ -7,6 +7,9 @@ The purpose of this organization is to facilitate the development of an open sou
 All people creating a repository in this organization agree to conform to the guidelines enumerated in the boilerplate repository. 
 The boilerplate repository lists a code of conduct and best practices for each repository. 
 
+NLIP is a managed project of the [AI Alliance](https://thealliance.ai).
+
 ## Information
 
 - Website: [https://nlip-project.org](https://nlip-project.github.io/.github/#/)
+- The AI Alliance: [home](https://thealliance.ai), [GitHub](https://the-ai-alliance.github.io/)
