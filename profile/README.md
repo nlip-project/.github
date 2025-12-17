@@ -2,21 +2,21 @@
 
 ## Scope
 
-The purpose of this organization is to facilitate the development of a royalty-free open source protocol for intelligent agents to communicate with each other using natural language. The organization will also contain reference implementations of the protocol and end-points.  
+[nlip_project](https://github.com/nlip-project) is the official organization working space for [Ecma TC56 NLIP](https://ecma-international.org/technical-committees/tc56/), operating under the [governance](https://ecma-international.org/) of Ecma International. Project governance is described [here](https://github.com/nlip-project/documents/blob/main/templates/governance_community).
 
-All people creating a repository in this organization agree to conform to the guidelines enumerated in the boilerplate repository. 
-The boilerplate repository lists a code of conduct and best practices for each repository. 
+The purpose of this organization is to facilitate the development and maintenance of a royalty-free open source protocol for intelligent agents to communicate with each other using natural language. The organization also contains reference implementations of the protocol and end-points.  
 
-NLIP is being developed as a standard by [Ecma TC56 NLIP](https://ecma-international.org/technical-committees/tc56/), with governance oversight by [Ecma International](https://ecma-international.org/). Learn more about [Governance](https://github.com/nlip-project/documents/blob/main/templates/governance_community) for this project.
+All people creating a repository in this organization agree to conform to the guidelines enumerated in the boilerplate repository. The boilerplate repository lists a code of conduct and best practices for each repository. 
 
-NLIP open-source community engagement and support is managed by the [AI Alliance](https://thealliance.ai). Learn more about AI Alliance project governance [here](https://thealliance.ai/governance).
+Developer documentation can be found at [https://nlip-project.org](https://nlip-project.github.io/.github/#/).
 
-## Information
+## Ecma milestones
 
-- Website: [https://nlip-project.org](https://nlip-project.github.io/.github/#/)
-- The AI Alliance:
-  - [home](https://thealliance.ai)
-  - [GitHub Organization](https://github.com/The-AI-Alliance/)
-  - [Getting involved](https://thealliance.ai/community)
-    - [Contributing Guide](https://github.com/The-AI-Alliance/community/CONTRIBUTING.md)
+- 10 December 2025: [Ecma International approves NLIP standards suite for universal AI agent communication](https://ecma-international.org/news/ecma-international-approves-nlip-standards-suite-for-universal-ai-agent-communication/)
+- 17 July 2025: [Call for participation and comments on revised NLIP specification and new WebSocket binding](https://ecma-international.org/news/call-for-participation-and-comments-on-revised-nlip-specification-and-new-websocket-binding/)
+- 15 May 2025: [Call for participation on NLIP for communication with AI agents standardization](https://ecma-international.org/news/call-for-participation-on-natural-language-interaction-protocol-for-communication-with-ai-agents-standardization/)
+
+## Community
+
+NLIP open-source community engagement and support is managed by the [AI Alliance](https://thealliance.ai/community). Learn more about AI Alliance projects [here](https://thealliance.ai/governance).
 
