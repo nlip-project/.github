@@ -1,11 +1,16 @@
 # Natural Language Interaction Protocol (NLIP)
 
 **NLIP** is an *open*, vendor-neutral application-layer protocol that lets independent **intelligent agents** running on phones, servers, IoT gateways, browsers, or HPC clusters exchange information in a well-typed, secure, multi-modal envelope. 
+The official standards can be downloaded from the Ecma website.
 
-<code>Notice: Ecma TC 56 has published second draft standard specification for NLIP. We invite all colleagues to comment on the specifications by opening an issue in the [ECMA Draft Repository](https://github.com/nlip-project/ecma_draft) </code>
-
-[![License](https://img.shields.io/badge/License-Apache--2.0-blue)](LICENSE)
-
+<code>
+* [ECMA-430: Natural Language Interaction Protocol (NLIP)](https://ecma-international.org/publications-and-standards/standards/ecma-430/)
+* [ECMA-431: Binding of NLIP over HTTP/HTTPS](https://ecma-international.org/publications-and-standards/standards/ecma-431/)
+* [ECMA-432: Binding of NLIP over WebSocket](https://ecma-international.org/publications-and-standards/standards/ecma-432/)
+* [ECMA-433: Binding of NLIP over AMQP](https://ecma-international.org/publications-and-standards/standards/ecma-433/)
+* [ECMA-434: Security profiles for NLI](https://ecma-international.org/publications-and-standards/standards/ecma-434/)
+* [EMCA TR/113: Explanatory guide to NLIP](https://ecma-international.org/publications-and-standards/technical-reports/ecma-tr-113/)
+</code>
 ## Overview
 
 The Natural Language Interaction Protocol (NLIP) is envisioned as the common wiring layer for the next generation of reasoning systems. Just as TCP/IP turned heterogeneous networks into a single Internet and HTTP unified document exchange, NLIP’s goal is to standardize the envelope, control signals, and policy semantics by which intelligent agents exchange information in natural language (and other modalities). Whether those agents speak on behalf of people, devices, cloud services, or entire organizations, NLIP supplies the predictable substrate that lets them cooperate safely and efficiently.
