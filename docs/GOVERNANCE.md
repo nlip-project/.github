@@ -83,7 +83,7 @@ To propose formal additions or changes to the spec, contributors are encouraged 
 - Join public calls (when available)
 - Seek sponsorship from an ECMA member to escalate the proposal within TC56
 
-Current Ecma members part of TC56 include:
+Current Ecma members of TC56 include:
 
 | Company | Representative | Title | Contact |
 | :--- | :--- | :--- | :--- |
