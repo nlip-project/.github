@@ -12,7 +12,7 @@ The official standards can be downloaded from the Ecma website.
 
 
 ## Overview
-P
+
 The Natural Language Interaction Protocol (NLIP) is envisioned as the common wiring layer for the next generation of reasoning systems. Just as TCP/IP turned heterogeneous networks into a single Internet and HTTP unified document exchange, NLIP’s goal is to standardize the envelope, control signals, and policy semantics by which intelligent agents exchange information in natural language (and other modalities). Whether those agents speak on behalf of people, devices, cloud services, or entire organizations, NLIP supplies the predictable substrate that lets them cooperate safely and efficiently.
 
 ### NLIP will establish
