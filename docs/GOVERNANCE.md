@@ -84,14 +84,18 @@ To propose formal additions or changes to the spec, contributors are encouraged 
 - Seek sponsorship from an ECMA member to escalate the proposal within TC56
 
 Current Ecma members part of TC56 include:
-- IBM
-- ServiceNow
-- Hitachi
-- Microsoft
-- Purdue
-- Indiana
-- University at Buffalo
-- Fordham
+
+| Company | Representative | Title | Contact |
+| :--- | :--- | :--- | :--- |
+| **IBM** | Dinesh Verma | IBM Fellow | [@dineshverma](https://github.com/dineshverma) |
+| **Hitachi**| Yohei Kawaguch | | | 
+| **ServiceNow** | Sean Hughes | Director of Open Science | [@hughesthe1st](https://github.com/hughesthe1st) |
+| **Chicago State University** | Moussa Ayyash | Professor |  
+| **Fordham University** | Mohamed Rahouti | Assistant Professor || 
+| **Indiana University** | Luyi Xing | Associate Professor  [@luyixing](https://github.com/luyixing) |
+| **Purdue University** | Elisa Bertino| Distinguished Professor | | 
+| **Marist University** | Rasit Topaloglu | Adjunct Professor | [@rasitot](https://github.com/rasitot) |
+| **University at Buffalo** | Jinjun Xiong | Professor || 
 
 ---
 
