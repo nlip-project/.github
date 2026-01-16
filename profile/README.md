@@ -10,11 +10,16 @@ All people creating a repository in this organization agree to conform to the gu
 
 Developer documentation can be found at [https://nlip-project.org](https://nlip-project.github.io/.github/#/).
 
-## Ecma milestones
+## Completed milestones
 
 - 10 December 2025: [Ecma International approves NLIP standards suite for universal AI agent communication](https://ecma-international.org/news/ecma-international-approves-nlip-standards-suite-for-universal-ai-agent-communication/)
 - 17 July 2025: [Call for participation and comments on revised NLIP specification and new WebSocket binding](https://ecma-international.org/news/call-for-participation-and-comments-on-revised-nlip-specification-and-new-websocket-binding/)
 - 15 May 2025: [Call for participation on NLIP for communication with AI agents standardization](https://ecma-international.org/news/call-for-participation-on-natural-language-interaction-protocol-for-communication-with-ai-agents-standardization/)
+
+## Upcoming milestones
+- 25 January, 2026: Submission of Standard Specifications to ISO
+- 28 February, 2026: Reference Implementation of NLIP providing interoperability to Claude skills
+- 31 March, 2026: Reference Implementation of Easy to Use NLIP based Demonstrator Agents 
 
 ## Community
 
