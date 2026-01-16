@@ -55,12 +55,16 @@ Think: less app fatigue, more seamless automation.
 
 ## Contributing
 
-We welcome contributions to the spec and implementations! You can:
+We welcome contributions to reference implementations and use-cases of NLIP. 
+You can: 
 
-- File issues and pull requests
-- Propose new extensions (see `/proposals/`)
+- Provide us pointers to new implementations and use-cases of NLIP
+- Propose any modifications to future revisions of NLIP (see `/proposals/`)
 
 Please see [Contributing Guidelines](CONTRIBUTING?id=contributing-to-nlip) and [Code of Conduct](CODE_OF_CONDUCT?id=code-of-conduct).
+
+## Reference Implementations and Use Cases
+
 
 ## Governance
 
