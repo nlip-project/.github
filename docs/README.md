@@ -3,12 +3,12 @@
 **NLIP** is an *open*, vendor-neutral application-layer protocol that lets independent **intelligent agents** running on phones, servers, IoT gateways, browsers, or HPC clusters exchange information in a well-typed, secure, multi-modal envelope. 
 The official standards can be downloaded from the Ecma website.
 
-* [ECMA-430: Natural Language Interaction Protocol (NLIP)](https://ecma-international.org/publications-and-standards/standards/ecma-430/)
-* [ECMA-431: Binding of NLIP over HTTP/HTTPS](https://ecma-international.org/publications-and-standards/standards/ecma-431/)
-* [ECMA-432: Binding of NLIP over WebSocket](https://ecma-international.org/publications-and-standards/standards/ecma-432/)
-* [ECMA-433: Binding of NLIP over AMQP](https://ecma-international.org/publications-and-standards/standards/ecma-433/)
-* [ECMA-434: Security profiles for NLIP](https://ecma-international.org/publications-and-standards/standards/ecma-434/)
-* [EMCA TR/113: Explanatory guide to NLIP](https://ecma-international.org/publications-and-standards/technical-reports/ecma-tr-113/)
+* [ECMA-430: Natural Language Interaction Protocol (NLIP)](https://ecma-international.org/publications-and-standards/standards/ecma-430/): the specification of NLIP protocol
+* [ECMA-431: Binding of NLIP over HTTP/HTTPS](https://ecma-international.org/publications-and-standards/standards/ecma-431/): describes how to implement NLIP over http/https protocol. 
+* [ECMA-432: Binding of NLIP over WebSocket](https://ecma-international.org/publications-and-standards/standards/ecma-432/): describes how to implement NLIP over websockets to achieve real-time streaming applications. 
+* [ECMA-433: Binding of NLIP over AMQP](https://ecma-international.org/publications-and-standards/standards/ecma-433): describes how to implement NLIP over AMQP for enterprise applications
+* [ECMA-434: Security profiles for NLIP](https://ecma-international.org/publications-and-standards/standards/ecma-434/): describes how NLIP implementations can be made secure
+* [EMCA TR/113: Explanatory guide to NLIP](https://ecma-international.org/publications-and-standards/technical-reports/ecma-tr-113/): provides motivation, use-cases and example exchanges of NLIP. 
 
 
 ## Overview
