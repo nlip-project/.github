@@ -9,7 +9,8 @@ The official standards can be downloaded from the Ecma website.
 * [ECMA-433: Binding of NLIP over AMQP](https://ecma-international.org/publications-and-standards/standards/ecma-433/)
 * [ECMA-434: Security profiles for NLI](https://ecma-international.org/publications-and-standards/standards/ecma-434/)
 * [EMCA TR/113: Explanatory guide to NLIP](https://ecma-international.org/publications-and-standards/technical-reports/ecma-tr-113/)
-* 
+
+
 ## Overview
 
 The Natural Language Interaction Protocol (NLIP) is envisioned as the common wiring layer for the next generation of reasoning systems. Just as TCP/IP turned heterogeneous networks into a single Internet and HTTP unified document exchange, NLIP’s goal is to standardize the envelope, control signals, and policy semantics by which intelligent agents exchange information in natural language (and other modalities). Whether those agents speak on behalf of people, devices, cloud services, or entire organizations, NLIP supplies the predictable substrate that lets them cooperate safely and efficiently.
