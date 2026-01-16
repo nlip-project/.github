@@ -68,7 +68,7 @@ Please see [Contributing Guidelines](CONTRIBUTING?id=contributing-to-nlip) and [
 
 ## Governance
 
-Please see [Governance](GOVERNANCE?id=governance)
+Please see [Governance](GOVERNANCE.md?id=governance)
 
 ## Support
 
